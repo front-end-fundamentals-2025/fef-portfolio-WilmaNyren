@@ -23,7 +23,7 @@ nav{
 h1{ 
     font-family: 'limelight',serif;
     color:white;
-    font-size: 9vw;
+    font-size: 7vw;
     margin-bottom: 1%;
     margin-top: 0%;
     text-align: center;
@@ -54,7 +54,7 @@ img{
 pic{
     margin-left: 25vw;
     margin-bottom: 10vw;
-    margin-top: 10vw;
+    margin-top: 5vw;
 }
 
 footer{
