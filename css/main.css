@@ -61,6 +61,7 @@ footer{
     width: 99vw;
     height: 100px;
     padding-top: 20px;
+    margin-top: 10px;
     background-color: rgb(11, 56, 2);
 }
 
@@ -80,5 +81,5 @@ form{
     */
 }
 #submit {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
