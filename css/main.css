@@ -39,7 +39,6 @@ h2{
     margin-top: 2vw;
 }
 
-
 /*side by side placement https://codedamn.com/news/frontend/how-to-put-image-and-text-side-by-side-in-html*/
 .container{
     display: grid;
@@ -66,8 +65,7 @@ footer{
 }
 
 form{
-    text-align: center;
-    
+    text-align: center; 
 }
 
 /*smal but anojing problem, https://chatgpt.com/share/678bb815-4b10-8002-b4ad-20611ed87023*/
@@ -83,5 +81,4 @@ form{
 }
 #submit {
     margin-bottom: 20px;
-
 }
