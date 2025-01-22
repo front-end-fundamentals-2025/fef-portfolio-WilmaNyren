@@ -3,9 +3,12 @@
         src: url(../limelight/limelight-regular.ttf);
 
 }
-/* titel */
 body{
     min-height: 500px;
+}
+ul{
+    color: white;
+    list-style: none;
 }
 
 header{
@@ -19,7 +22,7 @@ header{
 h1{ 
     font-family: 'limelight',serif;
     color:white;
-    font-size: 7vw;
+    font-size: 7vw; /*rem??*/
     margin-bottom: 1%;
     margin-top: 0%;
     text-align: center;
