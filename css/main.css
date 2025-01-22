@@ -6,14 +6,10 @@
 body{
     min-height: 500px;
 }
-ul{
-    color: white;
-    list-style: none;
-}
 
 header{
     width: 85vw;
-    height: 95px;
+    height: 10vw;
     background-color: rgb(11, 56, 2);
     padding: 7vw;
     margin-top: 2vw;
@@ -28,9 +24,10 @@ h1{
     text-align: center;
 }
 h2{
-    font-size: 5;
-    color:white;
+    font-size: 2rem;
+    color:rgb(11, 56, 2);;
     text-align: center;
+    padding: auto;xs
 }
 
 /*paragraf text*/
@@ -85,4 +82,22 @@ form{
 }
 #submit {
     margin-bottom: 0px;
+}
+ul{
+    
+    list-style: none;
+    display: flex;
+}
+li{
+    margin-left: 5vw;
+    margin-top: 1vw;
+    margin-top: 3vw;
+}
+
+/*smal help from chatgpt, to make the links not be blue and so on = https://chatgpt.com/share/6790a395-5998-8002-89e2-93e1a54c81dc*/
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    
 }
