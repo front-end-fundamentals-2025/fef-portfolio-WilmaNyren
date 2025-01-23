@@ -4,7 +4,7 @@
 
 }
 body{
-    min-height: 500px;
+    min-height: 700px;
 }
 
 header{
@@ -51,7 +51,7 @@ nav{
     margin-left: 3vw;
 }
 
-pic{
+#pic{
     margin-left: 25vw;
     margin-bottom: 10vw;
     margin-top: 7vw;
@@ -101,7 +101,32 @@ a{
     
 }
 /*work page layout*/
-.content{
+main{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    column-gap: 10px;
+    grid-template-areas: 
+    ". w1 w2 w3 ."
+    ;
+}
+
+section{
+    width: 100px;
+    height: 100px;
+    color: blueviolet;
+}
+#w1{
+    grid-area: w1;
+   
+    color: blueviolet;
+}
+#w2{
+    grid-area: w2;
+    
+    color: blueviolet;
+}
+#w3{
+    grid-area: w3;
+    
+    color: blueviolet;
 }
