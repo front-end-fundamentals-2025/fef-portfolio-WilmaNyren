@@ -35,19 +35,21 @@ h2{
 .container{
     display: grid;
     align-items:center;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 5px;
+    grid-template-areas: "header header header";
 }
 .pic{
-    margin-top: 0vw;
+    margin-right: 30%;
+    grid-area: image;
 }
 
 /*paragraf text*/
 .intro{   
+    grid-area: text;
     font-size: 1vw;
     text-align: justify; 
     margin-left: 5%;
-    margin-right: 50%;
     margin-top: 2vw;
 }
 
@@ -108,11 +110,6 @@ main{
     ;
 }
 
-section{
-    width: 100px;
-    height: 100px;
-    color: blueviolet;
-}
 #w1{
     grid-area: w1;
    
