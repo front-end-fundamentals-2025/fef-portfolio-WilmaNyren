@@ -15,18 +15,20 @@ header{
     height: 10vw;
     background-color: rgb(11, 56, 2);
     padding: 4vw;
+    padding-right: 0%;
+    
 }
 nav{
-    font-size: 2.5rem;
-    background-color: rgb(11, 56, 2);
+    font-size: 1rem;
+
 }
 ul{
     list-style: none;
     display: flex;
 }
 li{
-    margin-left: 5vw;
-    margin-top: 10px;
+    margin-left: 50px;
+    margin-top: 30px;
 }
 
 /*smal help from chatgpt, to make the links not be blue and so on = https://chatgpt.com/share/6790a395-5998-8002-89e2-93e1a54c81dc*/
@@ -80,7 +82,7 @@ h2{
 /*paragraf text*/
 .intro{   
     grid-area: textbox;
-    font-size: 1vw;
+    font-size: 1rem;
     text-align: justify; 
     margin-right: 20%;
     margin-left: 10px;
