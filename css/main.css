@@ -30,6 +30,18 @@ h2{
     padding: auto;
 }
 
+
+/*side by side placement https://codedamn.com/news/frontend/how-to-put-image-and-text-side-by-side-in-html*/
+.container{
+    display: grid;
+    align-items:center;
+    grid-template-columns: 1fr 1fr ;
+    column-gap: 5px;
+}
+.pic{
+    margin-top: 0vw;
+}
+
 /*paragraf text*/
 .intro{   
     font-size: 1vw;
@@ -39,23 +51,9 @@ h2{
     margin-top: 2vw;
 }
 
-/*side by side placement https://codedamn.com/news/frontend/how-to-put-image-and-text-side-by-side-in-html*/
-.container{
-    display: grid;
-    align-items:center;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 1fr;
-    column-gap: 5px;
-}
-
 nav{
     margin-left: 3vw;
 }
-.pic{
-    margin-top: 7vw;
-}
-
-
 
 footer{
     width: 99vw;
