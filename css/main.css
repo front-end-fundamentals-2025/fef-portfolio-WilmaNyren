@@ -68,9 +68,11 @@ h2{
     ". image textbox .";
 }
 .pic{
-     margin-left: 30%;
     margin-top: 5%;
     grid-area: image;
+    max-width: 100%;
+    margin-left: 4%;
+    
     /*width in index, thats were it only workes idk why*/
 }
 
