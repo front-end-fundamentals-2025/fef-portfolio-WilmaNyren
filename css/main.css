@@ -84,7 +84,6 @@ form{
     margin-bottom: 0px;
 }
 ul{
-    
     list-style: none;
     display: flex;
 }
@@ -100,4 +99,9 @@ a{
     color: white;
     font-size: 1.3rem;
     
+}
+/*work page layout*/
+.content{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 }
