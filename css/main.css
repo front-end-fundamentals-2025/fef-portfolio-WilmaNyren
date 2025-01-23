@@ -44,24 +44,24 @@ h2{
     display: grid;
     align-items:center;
     grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr;
     column-gap: 5px;
 }
 
 nav{
     margin-left: 3vw;
 }
-
-#pic{
-    margin-left: 25vw;
-    margin-bottom: 10vw;
+.pic{
     margin-top: 7vw;
 }
+
+
 
 footer{
     width: 99vw;
     height: 100px;
-    padding-top: 20px;
-    margin-top: 10px;
+    padding-top: 10px;
+    margin-top: 30px;
     background-color: rgb(11, 56, 2);
 }
 
@@ -123,10 +123,9 @@ section{
 #w2{
     grid-area: w2;
     
-    color: blueviolet;
+    color: rgb(43, 134, 226);
 }
 #w3{
     grid-area: w3;
-    
-    color: blueviolet;
+    color: rgb(137, 226, 43);
 }
