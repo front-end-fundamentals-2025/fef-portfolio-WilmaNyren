@@ -4,8 +4,10 @@
 
 }
 body{
-min-height: 800px;
+min-height: 100vh;
 margin: 0%;
+background-color: rgb(233, 233, 233);;
+
 }
 header{
     width: 100%;
@@ -49,44 +51,61 @@ margin: 0%;
 text-align: center;
 font-size: 7vw; /*rem??*/
 }
+
+/*Images*/
+img{
+    background-color: white;
+    max-width: 520px;
+    max-height: 400px;
+    padding: 10px;
+    margin: 15px;
+}
+#cat{
+    height: 410px;
+}
+#flyer{
+    
+    height: 400px;
+}
+
+
+/*grid things*/
 main{
     display: grid;
-    grid-template-columns: 10% auto auto auto 10%;
+    grid-template-columns: auto auto auto auto auto;
     grid-template-rows: auto auto;
     grid-gap: 15px;
     grid-template-areas: 
     ". s1 s2 s3 ."
-    ". s4 s5 s6 . ";
+    ". s4 s5 s6 . ";    
 }
 .work{
     width: 100%;
-    height: 600px;
-
+    height: auto;
 }
 
 #w1{
     grid-area: s1;
-    background-color: rgb(233, 233, 233);
+    background-color: white;
     margin-top: 15px;
 }
 #w2{
     grid-area: s2;
-    background-color: rgb(233, 233, 233);;
+    background-color: white;
     margin-top: 15px;
-
 }
 #w3{
     grid-area: s3;
-    background-color: rgb(233, 233, 233);;
+    background-color: white;
     margin-top: 15px;
 }
 #w4{
     grid-area: s4;
-    background-color: rgb(233, 233, 233);;
+    background-color: white;
 }#w5{
     grid-area: s5;
-    background-color: rgb(233, 233, 233);;
+    background-color: white;
 }#w6{
     grid-area: s6;
-    background-color: rgb(233, 233, 233);;
+    background-color: white;
 }
