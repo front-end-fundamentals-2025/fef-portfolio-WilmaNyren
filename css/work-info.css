@@ -47,36 +47,60 @@ h1{
     font-size: 7vw; /*rem??*/
     }
 /*standard thing upp, duplicate code, due to poor planing hihihihihihi*/
-
+img{
+    background-color: white;
+    max-width: 220px;
+    max-height: 200px;
+    margin: 10px;
+    margin-top: 10px;
+    margin-left: 10vw;
+    
+}
 /*grid things*/
 main{
     display: grid;
-    grid-template-columns: 10% 1fr 1fr 10%;
-    grid-template-rows: auto;
+    grid-template-columns: 13% 1fr 1fr 13%;
+    grid-template-rows: auto auto;
     min-height: 500px;
-    grid-gap: 15px;
     grid-template-areas: 
-    ". s1 s2 ."
+    ". i1 tx1 ."
+    ". i2 tx2 ."
+   
 }
-#images{
-    grid-area: s1;
+
+#im1{
+    grid-area: i1;
+    margin-top: 4.2vw;
+    background-color: white;
+    padding-left: 10vw;
+    padding-top: 10vw;
+}
+#im2{
+    grid-area: i2;
+    background-color: white;
+    padding-left: 10vw;
+    padding-top: 1vw;
+}
+
+
+#tx1{
+    grid-area: tx1; 
     margin-top: 4.2vw;
     background-color: white;
 }
-#text{
-    grid-area: s2;
-    margin-top: 4.2vw;
+#tx2{
+    grid-area: tx2;
     background-color: white;
 }
+
+/*inside the grids*/
+
 h2{
     margin: 5%;
     margin-left: 8%;
     margin-top: 8%;
 }
-/*inside the grids*/
-#criteria{
-    margin-left: 10%;
-}
+
 p{
     margin-left: 12%;
     margin-right: 12%;
@@ -93,4 +117,50 @@ p{
 img{
     max-width: 250px;
     margin: 2%;
+} 
+#criteria{
+    margin-left: 10%;
+    background-color: white;
+}
+@media screen and (max-width:900px){
+    body{
+        background-color: white;
+    }
+    header{
+        height: 12vw;
+    }
+    main{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "i1 tx1"
+        "i2 tx2";
+    }
+    #criteria{
+        margin-right: 20vw;
+    }
+    
+}
+@media screen and (max-width:600px) {
+    
+    header{
+        height: 16vw;
+    }
+    p{
+        text-align:left; 
+    }
+  
+    main{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 
+        "tx1"
+        "i1"
+        "tx2"
+        "i2";
+    }
+    img{
+        max-width: 200px;
+        margin-top: 0px;
+    }
 }
