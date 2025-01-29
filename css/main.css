@@ -12,7 +12,7 @@ body{
 
 header{
     width: 100%;
-    height: 10vw;
+    height: 11vw;
     background-color: rgb(11, 56, 2);
     padding: 4vw;
     padding-right: 0%;
@@ -20,15 +20,14 @@ header{
 }
 nav{
     font-size: 1rem;
-
 }
 ul{
     list-style: none;
     display: flex;
 }
 li{
-    margin-left: 50px;
-    margin-top: 30px;
+    margin-left: 5%;
+    margin-top: 0%;
 }
 
 /*smal help from chatgpt, to make the links not be blue and so on = https://chatgpt.com/share/6790a395-5998-8002-89e2-93e1a54c81dc*/
