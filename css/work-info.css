@@ -1,3 +1,4 @@
+/* This css file is for the the detaild page for one of the projects*/
 @font-face {
     font-family: 'limelight';
     src: url(../limelight/limelight-regular.ttf);
@@ -16,7 +17,6 @@ header{
 }
 nav{
     font-size: 1rem;  
-    
 }
 #navi{
     list-style: none;
@@ -26,6 +26,7 @@ li{
     margin-left: 5%;
     margin-top: 0%;
 }
+
 /*smal help from chatgpt, to make the links not be blue and so on = https://chatgpt.com/share/6790a395-5998-8002-89e2-93e1a54c81dc*/
 a{
     text-decoration: none;
@@ -133,7 +134,7 @@ img{
         "i2 tx2";
     }
     #criteria{
-        margin-right: 20vw;
+        margin-right: 10vw;
     } 
 }
 @media screen and (max-width:600px) {
