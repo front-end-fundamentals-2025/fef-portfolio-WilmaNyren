@@ -10,7 +10,7 @@ body{
 }
 header{
     width: 100vw;
-    height: 11vw;
+    height: 10vw;
     background-color: rgb(11, 56, 2);
     padding: 4vw;
     padding-right: 0%;
@@ -63,7 +63,6 @@ p{
     text-align: justify; 
 }
 
-/*I Want this centerd but idk how :((( nothing works*/
 #link-t-work{
     background-color:rgb(11, 56, 2) ;
     padding: 5px;
@@ -81,7 +80,6 @@ img{
     margin: 10px;
     margin-top: 10px;
     margin-left: 15%;
-    
 }
 
 /*grid things*/
@@ -125,10 +123,63 @@ main{
 }
 /*--------------grid-things-end-----------------*/
 
-/*media things*/
+/*--------------Animmations---------------------*/
+
+#loading{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+    animation-name: load;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+    visibility: hidden;
+
+    
+}
+@keyframes load {
+  
+    10%{
+        transform: translateY(-10px);
+        visibility:visible;
+
+    }
+   
+    20%{
+        transform: translateY(10px);
+
+    }
+    40%{
+        transform: translateY(-10px);
+    }
+   
+    60%{
+        transform: translateY(10px);
+        opacity: 1;
+
+    }
+    80%{
+        transform: translateY(-10px);
+
+    }
+   
+    100%{
+        transform: translateY(10px);
+        opacity: 0;
+        visibility: hidden;
+    }
+ }
+ 
+
+
+/*--------------animations-end------------------*/
+
+/*--------------media-things--------------------*/
 @media screen and (max-width:745px){
     header{
-        height: 12vw;
+        height: 15vw;
     }   
 }
 @media screen and (max-width:1250px){
@@ -147,10 +198,52 @@ main{
         background-color: white;
         margin-top: 0px;
     }
+    #loading{
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: white;
+        animation: load;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease;
+        visibility: hidden;
+    }
+     @keyframes load {
+        10%{ 
+            transform: translateY(50%);
+        visibility: visible;
+        }
+        20%{
+            transform: translateY(-50%);
+        }
+        30%{ 
+            transform: translateY(50%);
+    
+        }
+        40%{
+            transform: translateY(-50%);
+        }
+        60%{ 
+            transform: translateY(50%);
+                opacity: 1;
+
+        }
+        80%{
+            transform: translateY(-50%);
+        }
+       
+        100%{
+            transform: translateY(50%);
+            opacity: 0;
+            visibility: hidden;
+        }
+     }
+     
 }
 @media screen and (max-width:600px) {
     header{
-        height: 16vw;
+        height: 17vw;
     }
      main{
         display: grid;
@@ -170,3 +263,4 @@ main{
         max-width: 350px;
     }
 }
+/*media things end */
