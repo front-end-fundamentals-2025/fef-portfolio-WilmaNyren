@@ -121,10 +121,10 @@ main{
     grid-area: s6;
     background-color: white;
 }
+
 /*--------------grid-things-end-----------------*/
 
 /*--------------Animmations---------------------*/
-
 #loading{
     width: 15px;
     height: 15px;
@@ -136,11 +136,9 @@ main{
     animation-timing-function: ease;
     animation-direction: alternate;
     visibility: hidden;
-
-    
 }
 @keyframes load {
-    10%{
+    0%{
         transform: translateY(-10px);
         visibility:visible;
     }
@@ -163,9 +161,6 @@ main{
         visibility: hidden;
     }
  }
- 
-
-
 /*--------------animations-end------------------*/
 
 /*--------------media-things--------------------*/
@@ -202,36 +197,32 @@ main{
         visibility: hidden;
     }
      @keyframes load {
-        10%{ 
+        0%{ 
             transform: translateY(50%);
         visibility: visible;
         }
-        20%{
+        16%{
             transform: translateY(-50%);
         }
-        30%{ 
+        32%{ 
             transform: translateY(50%);
-    
         }
-        40%{
+        48%{
             transform: translateY(-50%);
         }
-        60%{ 
+        64%{ 
             transform: translateY(50%);
                 opacity: 1;
-
         }
         80%{
             transform: translateY(-50%);
         }
-       
         100%{
             transform: translateY(50%);
             opacity: 0;
             visibility: hidden;
         }
-     }
-     
+     } 
 }
 @media screen and (max-width:600px) {
     header{
