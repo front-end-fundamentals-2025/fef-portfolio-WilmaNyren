@@ -3,77 +3,103 @@
     font-family: 'limelight';
     src: url(../limelight/limelight-regular.ttf);
 }
-body{
+
+body {
     min-height: 100vh;
     margin: 0%;
-    background-color: rgb(233, 233, 233);;
+    background-color: rgb(233, 233, 233);
+    ;
 }
-header{
+
+header {
     width: 100vw;
     height: 10vw;
     background-color: rgb(11, 56, 2);
     padding: 4vw;
     padding-right: 0%;
 }
-nav{
-    font-size: 1rem;  
+
+nav {
+    font-size: 1rem;
 }
-ul{
+
+ul {
     list-style: none;
     display: flex;
 }
-li{
+
+li {
     margin-left: 5%;
     margin-top: 0%;
 }
 
 /*smal help from chatgpt, to make the links not be blue and so on = https://chatgpt.com/share/6790a395-5998-8002-89e2-93e1a54c81dc*/
-a{
-text-decoration: none;
-color: white;
-font-size: 1.3rem;
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
 }
-footer{
-width: 100%;
-height: 150px;
-padding-top: 4vw;
-padding-right: 3%;
-margin-top: 30px;
-background-color: rgb(11, 56, 2);
+
+footer {
+    width: 100%;
+    height: 150px;
+    padding-top: 4vw;
+    padding-right: 3%;
+    margin-top: 30px;
+    background-color: rgb(11, 56, 2);
 }
-h1{ 
-font-family: 'limelight',serif;
-color:white;
-margin: 0%;
-text-align: center;
-font-size: 7vw;
+
+h1 {
+    font-family: 'limelight', serif;
+    color: white;
+    margin: 0%;
+    text-align: center;
+    font-size: 7vw;
 }
 
 /*standard thing upp, duplicate code, due to poor planing hihihihihihi*/
-h4{
+h4 {
     margin-left: 8%;
     margin-bottom: 2%;
-    color:rgb(11, 56, 2) ;
+    color: rgb(11, 56, 2);
     font-size: 1rem;
 }
-p{
+
+p {
     margin-left: 12%;
     margin-right: 12%;
     margin-top: 3%;
-    text-align: justify; 
+    text-align: justify;
 }
 
-#link-t-work{
-    background-color:rgb(11, 56, 2) ;
+#link-t-work {
+    background-color: rgb(11, 56, 2);
     padding: 5px;
     padding-top: 2px;
     padding-bottom: 2px;
     margin-left: 12%;
     font-size: 0.9rem;
+    animation-name: link;
 }
 
+#link-t-work:hover {
+    animation: link 0.5 forwards;
+}
+
+@keyframes link {
+    0% {
+        background-color: rgb(11, 56, 2);
+    }
+
+    100% {
+        background-color: rgb(47, 138, 29);
+
+    }
+}
+
+
 /*Images*/
-img{
+img {
     background-color: white;
     max-width: 250px;
     max-height: 300px;
@@ -83,41 +109,50 @@ img{
 }
 
 /*grid things*/
-main{
+main {
     display: grid;
     grid-template-columns: 10% auto auto auto 10%;
     grid-template-rows: auto auto;
     grid-gap: 15px;
-    grid-template-areas: 
-    ". s1 s2 s3 ."
-    ". s4 s5 s6 .";    
+    grid-template-areas:
+        ". s1 s2 s3 ."
+        ". s4 s5 s6 .";
 }
-.work{
+
+.work {
     width: 100%;
-    height: auto ;
+    height: auto;
 }
-#w1{
+
+#w1 {
     grid-area: s1;
     background-color: white;
     margin-top: 15px;
 }
-#w2{
+
+#w2 {
     grid-area: s2;
     background-color: white;
     margin-top: 15px;
 }
-#w3{
+
+#w3 {
     grid-area: s3;
     background-color: white;
     margin-top: 15px;
 }
-#w4{
+
+#w4 {
     grid-area: s4;
     background-color: white;
-}#w5{
+}
+
+#w5 {
     grid-area: s5;
     background-color: white;
-}#w6{
+}
+
+#w6 {
     grid-area: s6;
     background-color: white;
 }
@@ -125,7 +160,7 @@ main{
 /*--------------grid-things-end-----------------*/
 
 /*--------------Animmations---------------------*/
-#loading{
+#loading {
     width: 15px;
     height: 15px;
     border-radius: 50%;
@@ -137,55 +172,65 @@ main{
     animation-direction: alternate;
     visibility: hidden;
 }
+
 @keyframes load {
-    0%{
+    0% {
         transform: translateY(-10px);
-        visibility:visible;
+        visibility: visible;
     }
-    20%{
+
+    20% {
         transform: translateY(10px);
     }
-    40%{
+
+    40% {
         transform: translateY(-10px);
     }
-    60%{
+
+    60% {
         transform: translateY(10px);
         opacity: 1;
     }
-    80%{
+
+    80% {
         transform: translateY(-10px);
     }
-    100%{
+
+    100% {
         transform: translateY(10px);
         opacity: 0;
         visibility: hidden;
     }
- }
+}
+
 /*--------------animations-end------------------*/
 
 /*--------------media-things--------------------*/
-@media screen and (max-width:745px){
-    header{
+@media screen and (max-width:745px) {
+    header {
         height: 15vw;
-    }   
+    }
 }
-@media screen and (max-width:1250px){
-    main{
+
+@media screen and (max-width:1250px) {
+    main {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto auto;
         grid-gap: 15px;
-        grid-template-areas: 
-        "s1 s2"
-        "s3 s4"
-        "s5 s6";    
+        grid-template-areas:
+            "s1 s2"
+            "s3 s4"
+            "s5 s6";
     }
-    #w3{
+
+    #w3 {
         grid-area: s3;
         background-color: white;
         margin-top: 0px;
     }
-    #loading{
+
+    #loading {
         width: 10px;
         height: 10px;
         border-radius: 50%;
@@ -196,54 +241,64 @@ main{
         animation-timing-function: ease;
         visibility: hidden;
     }
-     @keyframes load {
-        0%{ 
+
+    @keyframes load {
+        0% {
             transform: translateY(50%);
-        visibility: visible;
+            visibility: visible;
         }
-        16%{
+
+        16% {
             transform: translateY(-50%);
         }
-        32%{ 
+
+        32% {
             transform: translateY(50%);
         }
-        48%{
+
+        48% {
             transform: translateY(-50%);
         }
-        64%{ 
+
+        64% {
             transform: translateY(50%);
-                opacity: 1;
+            opacity: 1;
         }
-        80%{
+
+        80% {
             transform: translateY(-50%);
         }
-        100%{
+
+        100% {
             transform: translateY(50%);
             opacity: 0;
             visibility: hidden;
         }
-     } 
+    }
 }
+
 @media screen and (max-width:600px) {
-    header{
+    header {
         height: 17vw;
     }
-     main{
+
+    main {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto auto
-        auto;
+        grid-template-rows: auto auto auto auto auto auto;
         grid-gap: 15px;
-        grid-template-areas: 
-        "s1"
-        "s2"
-        "s3"
-        "s4"
-        "s6"
-        "s5";    
+        grid-template-areas:
+            "s1"
+            "s2"
+            "s3"
+            "s4"
+            "s6"
+            "s5";
     }
-    img{
+
+    img {
         max-width: 350px;
     }
 }
+
 /*media things end */
