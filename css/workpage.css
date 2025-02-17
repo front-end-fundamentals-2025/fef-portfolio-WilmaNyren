@@ -80,6 +80,8 @@ p {
     margin-left: 12%;
     font-size: 0.9rem;
     animation-name: link;
+    animation-timing-function: ease;
+
 }
 
 #link-t-work:hover {
