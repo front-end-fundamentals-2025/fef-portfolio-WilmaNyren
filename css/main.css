@@ -102,18 +102,16 @@ form {
 
 /*smal but anojing problem, https://chatgpt.com/share/678bb815-4b10-8002-b4ad-20611ed87023*/
 #message {
-    width: 25vw;
-    height: 15vw;
+    width: 20vw;
+    height: 10vw;
     padding: 10px;
-    box-sizing: border-box;
-    /*
-    vertical-align: top;
-    did not work for now :((
-    */
+
 }
 
-#submit {
-    margin: 0px;
+#contact-display {
+    margin-left: 30%;
+    margin-right: 30%;
+
 }
 
 @media screen and (max-width:745px) {

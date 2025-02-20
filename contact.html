@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact me</title>
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/main.js" defer></script>
+    <script src="js/contact.js" defer></script>
 </head>
 
 <body>
@@ -16,8 +16,7 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li> <a href="work.html">My work</a></li>
-
-                <li><a href="contakt.html">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -42,13 +41,15 @@
         </div>
         <br>
         <div>
-            <input type="text" id="message" placeholder="Your message">
-            <!-- problems = placeholder is in the middle, and that the text continues in one line forever :(-->
+            <textarea id="message" placeholder="Your message"></textarea>
         </div>
         <br>
         <button>
             <input type="submit" id="submit">
         </button>
+        <button type="button" id="button">Contact History</button>
+        <div id="contact-display"></div>
+
     </form>
     <footer></footer>
 </body>
