@@ -2,8 +2,7 @@ const nameInputElement = document.getElementById("name");
 const emailInputElement = document.getElementById("email");
 const subjectInputElement = document.getElementById("subject");
 const textInputElement = document.getElementById("message");
-const submitElement = document.getElementById("submit");
-
+document;
 submitElement.addEventListener("click", function (event) {
   event.preventDefault();
   let contactData = {
