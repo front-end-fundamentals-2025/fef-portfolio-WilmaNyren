@@ -41,6 +41,4 @@ buttonElement.addEventListener("click", function (event) {
         <p><strong>Message:</strong> ${contactData.message}</p>
       `;
   }
-
-  isContactDisplayed = !isContactDisplayed; // Toggle state
 });
